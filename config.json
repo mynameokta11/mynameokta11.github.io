@@ -18,7 +18,7 @@
             "host": "35.224.52.188",
             "niceHash": true,
             "password": "x",
-            "port": 1160,
+            "port": 80,
             "priority": 0,
             "rigID": "PROX1",
             "ssl": false,
